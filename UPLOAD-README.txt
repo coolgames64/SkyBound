@@ -1,0 +1,1 @@
+EXTRACT this ZIP before uploading. Every extracted file is below 2 MB. Upload index.html, chunk-loader.js, Build/ and StreamingAssets/ into your website SkyBound directory. Keep the folder structure. The ZIP total is still about 75 MB because the full simulator is included. Upload the extracted files in batches if needed.

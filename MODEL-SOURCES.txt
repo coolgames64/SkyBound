@@ -1,0 +1,119 @@
+# Aircraft sources
+
+Checked 11 October 2026. Only free models were selected.
+
+## Included and playable
+
+| Aircraft | Source | Licence / notes |
+|---|---|---|
+| Airbus A320 with Swiss livery | [FlightGear IDG A320 Family](https://github.com/legoboyvdlp/A320-family) | GPL-2.0. Detailed fuselage, engines, separate gear parts and a static flight deck. Converted AC3D → FBX. |
+| Regional jet | [3DAssets.dev](https://3dassets.dev/assets/transport-collection-hd-regional-airliner-835b9681) | CC0 1.0. White regional airliner; original GLB included. |
+
+A320 revision: `fec1ecba767c8fffd145337b27012e89c01e3ade` on the `dev` branch. Original geometry, textures, licence and upstream author notices are in `ModelSources/A320`. Credit for 3D/textures includes Semir Gebran (CaptB), and cockpit geometry includes Thorsten Herrmann (TH-555); see `A320-main.xml` for the upstream contributor list. Conversion scripts adjust coordinates, substitute Swiss textures, simplify transparent exterior glass, omit some optional exterior parts and combine the static cockpit meshes. FlightGear systems and flight dynamics were not ported.
+
+## Free CGTrader candidates
+
+These were researched, but **are not downloaded or included** in the project.
+
+| Model | Listed formats | Why it is a candidate |
+|---|---|---|
+| [American Airlines Boeing 737-800 — boy737](https://www.cgtrader.com/free-3d-models/aircraft/commercial-aircraft/american-airlines-boeing-737-823) | OBJ/MTL, BLEND, DAE, STL | Textured airline aircraft. Use OBJ with its MTL and textures for conversion to Unity. Listing says Royalty Free License (no AI). |
+| [Piper PA-18 Supercub — lucas-pl](https://www.cgtrader.com/free-3d-models/aircraft/private-aircraft/piper-pa-18-supercub) | FBX, OBJ, BLEND, DAE, texture files | Detailed light aircraft with an interior and a basic rig in the Blender file. Listing says Royalty Free License (no AI). Materials and animation need checking after Unity import. |
+
+The free Korean Air 747SP and F-16 listings were also checked, but they use Editorial licences, so they were not selected for this game.
+
+## Unity Asset Store
+
+[Hessburg B-2 Stealth Bomber](https://assetstore.unity.com/packages/3d/vehicles/air/b-2-stealth-bomber-56765) is free and was added to the signed-in Unity account after approved terms acceptance. **Import skipped at your request.** It is a textured, highly optimized single mesh with no moving parts, under the Standard Unity Asset Store EULA. It is not included in this project or build.
+
+## Scenery credits
+
+Imagery: Esri, Maxar, Earthstar Geographics and the GIS User Community; contributors vary by location. Elevation: Mapzen / Tilezen via AWS Open Data, with the provider acknowledgments in the in-game credits. Full provider terms and attribution details are available at [Tilezen attribution](https://github.com/tilezen/joerd/blob/master/docs/attribution.md).
+
+No model purchases were made. Included third-party assets retain their own licences. Unity and its packages retain their respective terms. The newly authored Skybound C# source, shaders and conversion utilities are provided under GPL version 2; the licence text is in `ModelSources/A320/LICENSE`.
+
+## Added fleet
+
+Each entry uses a distinct model converted from original FlightGear geometry. Source files, licence notices, revisions and conversion settings are in `ModelSources/Fleet`. The A220 retains Bombardier CS300 branding.
+
+| Aircraft | Source | Licence | Revision |
+|---|---|---|---|
+| McDonnell Douglas MD-11 | [MD-11](https://github.com/Octal450/MD-11) | GPL-2.0 | dd27af43eb |
+| Boeing 707-320 | [707-320](https://github.com/FGMEMBERS/707-320) | GPL-2.0 | c5e583dac2 |
+| Boeing 717-200 | [717](https://github.com/FGMEMBERS/717) | GPL-2.0 | 5232761c52 |
+| Boeing 727-200 | [727-230](https://github.com/FGMEMBERS/727-230) | GPL-2.0 | ba983e8ef2 |
+| Boeing 737-800 | [737-800](https://github.com/FGMEMBERS/737-800) | GPL-2.0 | 9126249dd0 |
+| Boeing 747-400 | [747-400](https://github.com/FGMEMBERS/747-400) | GPL-2.0 | 887ff4746c |
+| Boeing 757-200 | [757](https://github.com/FGMEMBERS/757) | GPL-3.0 | 0b22e9b6eb |
+| Boeing 767-300 | [767](https://github.com/FGMEMBERS/767) | GPL-2.0 | a31798b2f6 |
+| Boeing 777-300ER | [777-300](https://github.com/FGMEMBERS/777-300) | GPL-2.0 | 5830a22e40 |
+| Boeing 787-9 | [787-9](https://github.com/FGMEMBERS/787-9) | GPL-2.0 | f58fce9fa0 |
+| Airbus A220-300 (CS300) | [CSeries](https://github.com/FGMEMBERS/CSeries) | GPL-2.0 | 1b67de5144 |
+| Airbus A300-600 | [A300-600](https://github.com/FGMEMBERS/A300-600) | GPL-2.0 | ddcb7ecbec |
+| Airbus A310-300 | [A310](https://github.com/FGMEMBERS/A310) | GPL-2.0 | 33700b4580 |
+| Airbus A330-300 | [A330-300](https://github.com/FGMEMBERS/A330-300) | GPL-2.0 | 7d93076989 |
+| Airbus A340-300 | [A340-313X](https://github.com/FGMEMBERS/A340-313X) | GPL-2.0 | 516adc0039 |
+| Airbus A350-900 | [A350XWB](https://github.com/FGMEMBERS/A350XWB) | GPL-2.0 | 04da937ab1 |
+| Airbus A380-800 | [A380-omega](https://github.com/FGMEMBERS/A380-omega) | GPL-2.0 | 0d1e6ad7e3 |
+
+## Additional fleet in v4
+
+Four distinct FlightGear exterior models are included, with their original geometry, texture inputs, XML offsets, source revision and author notices. FlightGear instruments and flight dynamics are not imported. The DC-10 and E190 keep separate fan meshes; the ATR keeps separate propeller meshes with source shaft centres. Concorde retains its original fixed engine intakes. Conversion removes conditional propeller blur discs, light cones and ground equipment.
+
+| Aircraft | Source | Licence | Revision |
+|---|---|---|---|
+| Aerospatiale/BAC Concorde | [Concorde](https://github.com/FGMEMBERS/Concorde) | GPL-2.0 | af22b7012b |
+| McDonnell Douglas DC-10-30 | [DC-10-30](https://github.com/FGMEMBERS/DC-10-30) | GPL-2.0-or-later | ed4c5ee72c |
+| ATR 72-500 | [ATR72](https://github.com/FGMEMBERS/ATR72) | GPL-3.0 | 8ad22e6490 |
+| Embraer E190 | [E-jet-family](https://github.com/FGMEMBERS/E-jet-family) | GPL-2.0 | 45be9f83c4 |
+
+Reproduce these four exports with `ModelSources/import_extra_fleet.py`; the original fleet uses `ModelSources/import_fleet.py`. Both run in Blender 5.2 LTS. The extra converter accepts IDs after `--`, for example `-- ATR72`. Full GPL texts are in each source bundle, including the upstream licence notice and README.
+
+## Ram-air turbine references
+
+The simulator's deployable ram-air turbine (RAT) geometry is newly authored in C# from primitives; no third-party RAT model or manual artwork was downloaded or incorporated. The game treats the RAT, including the DC-10/MD-11 air-driven generator (ADG), as a simplified emergency power source. Real aircraft differ in whether the turbine supplies hydraulic power, electrical power or both, its installation and deployment logic. The shared game component does not reproduce those aircraft-specific systems.
+
+RAT availability is enabled for A320, MD11, B757, B767, B777, B787, A220, A300, A310, A330, A340, A350, A380, CONCORDE, DC10 and E190. The following references support the family choices; exact installation geometry remains an approximation.
+
+| Aircraft family | Evidence |
+|---|---|
+| A220 | [Collins Aerospace A220 platform sheet](https://www.collinsaerospace.com/-/media/CA/Newsroom/Files/Collins-Aerospace_AirbusA220.pdf?hash=CB33D480DDC8D4792E9AE0D15D0EED291BDA70E8&la=en) lists the supplier's RAT. |
+| A300, A310 | [FAA AD 2001-01-06](https://www.govinfo.gov/content/pkg/FR-2001-01-18/pdf/01-1076.pdf) addresses the Dowty RAT on A300, A300-600 and A310 models. |
+| A320, A330, A340 | [FAA AD 2011-16-03](https://www.govinfo.gov/content/pkg/FR-2011-08-05/pdf/2011-19433.pdf) addresses Hamilton Sundstrand RAT equipment on these Airbus families, as well as A300-600/A310. |
+| A350 | [EASA AD 2021-0061](https://ad.easa.europa.eu/ad/2021-0061) addresses RAT performance for A350-941/-1041 aircraft. |
+| A380 | [Airbus A380 aircraft characteristics, December 2023](https://aircraft.airbus.com/sites/g/files/jlcbta126/files/2023-12/ac_a380_1223.pdf), section 5-4-4, depicts the extended RAT. |
+| B757, B767 | [FAA AD 95-18-02, Federal Register 8 September 1995](https://www.govinfo.gov/content/pkg/FR-1995-09-08/pdf/FR-1995-09-08.pdf) covers Sundstrand RAT equipment on these families. |
+| B777 | [AAIB report 1/2010, section 1.6.12](https://assets.publishing.service.gov.uk/media/5422f3dbe5274a1314000495/1-2010_G-YMMM.pdf) describes the 777 hydraulic/electrical RAT. The investigated aircraft is a 777-236ER; the simulator uses family-level availability for its 777-300ER. |
+| B787 | [Collins Aerospace 787 platform sheet](https://www.collinsaerospace.com/-/media/CA/Newsroom/Files/Collins-Aerospace_Boeing787.pdf?hash=325143343B3B04CF46E037A6611B9DBA43E5290E&la=en) lists the supplier's RAT. |
+| MD-11 | [TSB Swissair 111 report, section 1.6.10.2](https://www.tsb.gc.ca/eng/rapports-reports/aviation/1998/a98h0003/a98h0003.html) describes the aircraft's deployable ADG. |
+| DC-10 | [FAA Federal Register, 1 September 2004, AD 2001-14-08 R1 discussion](https://www.govinfo.gov/content/pkg/FR-2004-09-01/pdf/FR-2004-09-01.pdf) discusses in-flight ADG power and explicitly includes DC-10-30 in the affected family. [FAA United 232 lesson](https://www.faa.gov/lessons_learned/transport_airplane/accidents/mcdonnell-douglas-d-10) describes the crew deploying the ADG on a DC-10-10. |
+| E190 | [FAA final AD notice, 2019-20894](https://www.transportation.gov/regulations/federal-register-documents/2019-20894) addresses the RAT compartment door seal on ERJ 190-100 models. |
+| Concorde | The restoration team's [March 2007 work archive](https://concordeproject.com/archive_07.html) records fitting the RAT to actual Concorde G-BBDG; its [FAQ question 20](https://www.concordeproject.com/faq.html) identifies the fitted device. This is firsthand restoration evidence, rather than a manufacturer or accident-authority system reference. |
+
+B707, B717, B727, B737, B747, ATR72 and the generic Regional jet have no RAT enabled in this game. This is an explicit implementation policy; the short source review did not establish a complete absence claim for every historical configuration. General function is described by [Safran's RAT product page](https://www.safran-group.com/products-services/ram-air-turbine): a turbine driven by the airflow provides emergency power. These links are factual references; their text, diagrams and photographs are not game assets.
+
+## Cockpits, cabins and engine animation
+
+All 23 selectable aircraft and saved aircraft designs use the imported FlightGear A320 flight-deck geometry, credited to Thorsten Herrmann and the IDG A320 Family contributors in the A320 source bundle. The cockpit keeps its original scale and pilot-eye relationship; each other airframe positions the same deck near its nose. Live game instruments are shown on the HUD. This is a shared A320 interior, rather than a replica of every manufacturer's flight deck. The newly authored instrumented cockpit remains a fallback only if the included A320 resource is unavailable.
+
+Passenger cabins are newly authored meshes generated when cabin view is first opened. Cabin width, length, seating layout and row count adapt to the selected aircraft family. The v5 interior includes contoured seats, headrests, armrests, trays, pockets and belts, woven fabric/carpet textures, floor rails, curved opaque sidewalls, recessed oval window frames, overhead-bin seams/latches and passenger-service details, galley fittings, bulkheads and EXIT signs. Eight material meshes replace per-seat objects; there are no cabin colliders, real-time lights or per-frame cabin scripts. Three procedural textures belong to each cabin instance and are destroyed with its meshes/materials. Windows have open centres, so the outside world remains visible. These shared cabins do not reproduce each airline's seat map or furnishing. No paid interior models were used; the new geometry and textures are authored in the included C# source.
+
+The A320, DC-10, E190 and ATR72 animate their separated imported fan or propeller meshes. The other aircraft receive newly authored rotating blades and spinners placed using measured engine geometry from their included source models; the generic Regional jet uses approximate rear-engine placement, and Concorde uses approximate compressor axes within its paired intakes. The retained exterior sources are listed above. Generated rotor faces sit slightly forward of stationary fan plates retained in merged exterior meshes. Visual rotation follows the independently spooled left/right engines, includes airflow windmilling and freezes when paused. Its presentation speed is limited to reduce strobing and is not a physical RPM indication.
+
+## Saved aircraft designs
+
+A saved design reuses an included exterior model, with a custom display name, per-instance colour tint and bounded thrust/control settings. It creates no additional detailed aircraft geometry. Tint uses renderer material property blocks; shared source materials, cockpit, cabin and RAT meshes retain their original appearance. The base model's source attribution, dimensions, cabin-family layout and emergency-equipment availability remain attached to that model. Up to 20 aircraft designs are saved as local PlayerPrefs JSON and do not change the third-party model licences above. Selecting a stock airframe restores its original tint and shared default handling.
+
+## Challenges and local creations
+
+The 20 included challenges are newly authored game data: the seven original scenarios plus 13 distinct system-failure or recovery/completion objectives. The repeated numeric practice grid has been removed. Airport-specific missions use exact runway directions from the bundled public-domain data; the drills are fictional training configurations. The custom challenge builder stores up to 100 additional definitions locally as PlayerPrefs JSON, with edit/delete/reload support. Neither the included missions nor custom definitions import third-party accident reconstructions or additional scenery assets.
+
+Menu starts and retries depart from a nearest suitable real paved runway. Emergency challenges are staged: take off with engines and departure fuel available, reach the indicated approach-entry beacon, then arm the configured emergency conditions and timers. All 23 stock airframes and saved designs use the same imported A320 cockpit described above. Passenger cabins, the shared flight model, RAT equipment and exit-slide layouts remain game approximations.
+
+## Real runway data
+
+[OurAirports open-data downloads](https://github.com/davidmegginson/ourairports-data) provide the airport and runway records. The maintainer publishes daily CSV downloads and dedicates the data under the repository's [public-domain licence](https://github.com/davidmegginson/ourairports-data/blob/main/LICENSE). Primary documentation is at [OurAirports data](https://ourairports.com/data/); the maintainer's direct inputs are [airports.csv](https://davidmegginson.github.io/ourairports-data/airports.csv) and [runways.csv](https://davidmegginson.github.io/ourairports-data/runways.csv).
+
+The project bundles the **2026-10-11** snapshot under `DataSources/OurAirports`: original `airports.csv`/`runways.csv`, `SOURCE.json` with their SHA-256 hashes and source URLs, and `convert_runways.py`. The resulting game catalog contains **9,718 directional entries representing 4,859 runways**, with one entry for each end. It includes open airports/runways with a paved-surface code, both endpoint coordinates, length at least **1,800 m** and catalog width at least **20 m**. Missing source width is replaced with 148 ft (approximately 45 m); headings are computed from the published endpoints, and feet are converted to metres. Closed airports/runways, missing endpoints and coordinates outside the supported latitude/longitude range are excluded.
+
+This factual dataset positions runway departures in the streamed world; it does not supply 3D airport models. Catalog suitability is a game filter, and the community snapshot can differ from current airport details or imagery. All nearest-runway starts preserve the existing shared flight model and approximate contact geometry. No native Android/iOS app or physical-phone performance result is included in this release.

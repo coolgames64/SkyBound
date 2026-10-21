@@ -1,0 +1,112 @@
+SKYBOUND FLIGHT SIMULATOR
+A recreational flight game with simplified flight dynamics.
+
+AIRBUS A320 EXTERIOR & FLIGHT DECK
+FlightGear IDG A320 Family, GPL version 2.
+Repository: github.com/legoboyvdlp/A320-family
+Revision: fec1ecba767c8fffd145337b27012e89c01e3ade
+
+3D and textures: Semir Gebran (CaptB).
+Cockpit: Thorsten Herrmann (TH-555).
+Contributors include Josh Davidson (Octal450), Jonathan Redpath (legoboyvdlp), Nia / merspieler, Matthew Maring, Andrea Vezzali and the FlightGear community.
+
+Converted from AC3D to FBX, with Swiss exterior textures, static flight-deck geometry, and simplified opaque exterior glazing. Source geometry, textures, licence and conversion scripts are in ModelSources/A320. FlightGear systems and flight dynamics are not included.
+
+REGIONAL JET
+3DAssets.dev / Vehicle Collection HD.
+CC0 1.0. Original GLB is in ModelSources.
+
+SATELLITE IMAGERY
+World Imagery: Esri, Maxar, Earthstar Geographics and the GIS User Community. Individual imagery contributors vary by location.
+services.arcgisonline.com
+
+ELEVATION / TERRAIN TILES
+Mapzen / Tilezen, hosted by AWS Open Data.
+Terrain data is resampled onto a game mesh; negative elevations are clamped to sea level.
+
+Provider acknowledgments:
+ArcticDEM: DigitalGlobe imagery; NSF grants 1043681, 1559691 and 1542736.
+Australia: © Commonwealth of Australia / Geoscience Australia, 2017.
+Austria: offene Daten Österreichs, DGM Österreich.
+Canada: Open Government Licence – Canada.
+Europe: Copernicus and European Union funding, EU-DEM.
+ETOPO1: NOAA / NCEI / NESDIS, U.S. Department of Commerce.
+Mexico: INEGI, Continental relief, 2016.
+New Zealand: © Crown / Land Information New Zealand and New Zealand Government, 2011. All rights reserved.
+Norway: © Kartverket.
+United Kingdom: © Environment Agency, 2015; copyright and database rights reserved.
+3DEP, GMTED2010 and SRTM: U.S. Geological Survey.
+
+Licence and provider details:
+github.com/tilezen/joerd/blob/master/docs/attribution.md
+registry.opendata.aws/terrain-tiles/
+
+SCENERY NOTES
+Internet access is needed. Imagery dates, resolution and colour vary between regions. Buildings and trees are part of the aerial image rather than separate 3D objects. Cockpit switches are static; use the keyboard for game controls.
+
+
+EXPANDED AIRLINER FLEET
+Original author and licence notices are preserved in ModelSources/Fleet. Converted geometry uses Skybound flight systems.
+
+McDonnell Douglas MD-11 — Original authors listed in source bundle
+https://github.com/Octal450/MD-11
+
+Boeing 707-320 — Innis Cunningham, Prestes, Andino Gonthäler
+https://github.com/FGMEMBERS/707-320
+
+Boeing 717-200 — Original authors listed in source bundle
+https://github.com/FGMEMBERS/717
+
+Boeing 727-200 — The FlightGear 727 Project
+https://github.com/FGMEMBERS/727-230
+
+Boeing 737-800 — Original authors listed in source bundle
+https://github.com/FGMEMBERS/737-800
+
+Boeing 747-400 — Gijs de Rooy, Ivan Ngeow, Markus Bulik / Gijs de Rooy, Jonathan Redpath, Ivan Ngeow, Markus Bulik and others
+https://github.com/FGMEMBERS/747-400
+
+Boeing 757-200 — Liam (3D Model), Jon B. and Isaias Prestes (FDM) / Liam (3D Model), Isaias Prestes
+https://github.com/FGMEMBERS/757
+
+Boeing 767-300 — Peter Brendt (JSB, systems), Liam Gathercole, Isaias V. Prestes (3D), Isreal Hernandez (3D for KC-46) / Peter Brendt (JSB, systems), Liam Gathercole and Isaias V. Prestes (3D)
+https://github.com/FGMEMBERS/767
+
+Boeing 777-300ER — Justin Smithies, Syd Adams, Arminair / Wojciech Kaczmarski
+https://github.com/FGMEMBERS/777-300
+
+Boeing 787-9 — Original authors listed in source bundle
+https://github.com/FGMEMBERS/787-9
+
+Airbus A220-300 (CS300) — ACJZA, Joshua Davidson (it0uchpods/411), Jonathan Redpath, D-ECHO, Pakistan-1, Gabriel Hernandez
+https://github.com/FGMEMBERS/CSeries
+
+Airbus A300-600 — Models: Toryx, Airbus330, Pierre Duval; Flightdeck: Pierre Duval
+https://github.com/FGMEMBERS/A300-600
+
+Airbus A310-300 — Models: Toryx; Flightdeck: Pierre Duval; Sounds and AP: Ja Sam Niko / Models: Toryx; Flightdeck: Pierre Duval Joshua Davidson (it0uchpods); Sounds and AP: Ja Sam Niko; FDM fixes: Peter Brendt - Jabberwocky
+https://github.com/FGMEMBERS/A310
+
+Airbus A330-300 — Ampere K Hardraade (3d, FDM), Skyop (systems, instruments, etc.)
+https://github.com/FGMEMBERS/A330-300
+
+Airbus A340-300 — Liam Gathercole, Andino
+https://github.com/FGMEMBERS/A340-313X
+
+Airbus A350-900 — vezza
+https://github.com/FGMEMBERS/A350XWB
+
+Airbus A380-800 — N.Muraleedharan, Ampere.K, I.Cunningham, F.Dalvi, S.Hamilton, et al
+https://github.com/FGMEMBERS/A380-omega
+
+Aerospatiale/BAC Concorde — Original Concorde model contributors (original author unknown in upstream README); godarklight, islandmonkey and FlightGear contributors. GPL-2.0.
+https://github.com/FGMEMBERS/Concorde
+
+McDonnell Douglas DC-10-30 — Ryan Miller (model); Ampere K. Hardraade (GE CF6-50 engine); Thomas Ito-Haigh (fan texture); FlightGear contributors. GPL-2.0-or-later.
+https://github.com/FGMEMBERS/DC-10-30
+
+ATR 72-500 — Narendran Muraleedharan, Donald Belcham, Dwayne Gable, Oliver (ot-666), camelon. GPL-3.0.
+https://github.com/FGMEMBERS/ATR72
+
+Embraer E190 — Narendran Muraleedharan / Omega Hangar; James, Tristan, Chris and Jonathan (livery contributors); FlightGear contributors. GPL-2.0.
+https://github.com/FGMEMBERS/E-jet-family
