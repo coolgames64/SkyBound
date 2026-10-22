@@ -1,0 +1,1 @@
+User-supplied 737 MAX 8 OBJ, exported from Roblox Studio according to the file header. Creator and download source were not included. Referenced 737 Max-8.mtl was not supplied; neutral placeholder materials are used. Separate fan rotors and landing gear meshes are retained.

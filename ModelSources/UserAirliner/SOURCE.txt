@@ -1,0 +1,1 @@
+Boeing 777-300ER, supplied by the user as a royalty-free model. Original filename: 3d-model.obj. Creator/download URL not yet supplied. Referenced 3d-model.mtl was not supplied, so a neutral placeholder material is used. The simulator scales this aircraft to 73.9 metres.
